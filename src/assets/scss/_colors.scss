@@ -1,0 +1,27 @@
+// =================================================================================================
+// ---- Colors ----
+// =================================================================================================
+
+// ==|== Variables =================================================================================
+$white: #FFFFFF;
+$black: #000000;
+$grey-dark: #303030;
+$grey-light: #474747;
+
+
+// ==|== Helper Functions ==========================================================================
+@function black($opacity) {
+    @return rgba($black, $opacity);
+}
+
+@function white($opacity) {
+    @return rgba($white, $opacity);
+}
+
+@function tint($color, $percentage) {
+    @return mix($white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+    @return mix($black, $color, $percentage);
+}

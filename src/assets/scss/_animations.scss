@@ -1,0 +1,21 @@
+// =================================================================================================
+// ---- Animations ----
+// =================================================================================================
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.25s linear;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave {
+    opacity: 1;
+}
+
+.fade-leave-to {
+    opacity: 0;
+}
